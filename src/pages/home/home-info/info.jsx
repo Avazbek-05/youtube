@@ -6,7 +6,7 @@ const HomeInfo = () => {
   const { id } = useParams();
   const [data, setData] = useState({});
   useEffect(() => {
-    request.get(`/home/${id}`).then((res) => setData(res.data));
+    request.get(`/${id}`).then((res) => setData(res.data));
   },[]);
   return <div className="text-white">HomeInfo</div>;
 };
